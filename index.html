@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title>QA毛俊的网站</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f4;
+				/* 背景色为淡灰色 */
+				color: white;
+				overflow: hidden;
+				/* 隐藏溢出内容，以保持灰色背景 */
+			}
+
+			.background-image {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-image: url('https://source.unsplash.com/random');
+				background-size: cover;
+				background-position: center;
+				background-attachment: fixed;
+				filter: blur(8px);
+				/* 模糊效果，以使淡灰色背景更突出 */
+				z-index: -1;
+				/* 放置在最底层 */
+			}
+
+			.container {
+				position: relative;
+				z-index: 1;
+				/* 放置在图片上层 */
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				text-align: center;
+			}
+
+			.header {
+				font-size: 2rem;
+				margin-bottom: 1rem;
+			}
+
+			.description {
+				font-size: 1.2rem;
+				margin-bottom: 2rem;
+			}
+
+			.cta-button {
+				padding: 0.5rem 2rem;
+				background-color: #dcdde1;
+				/* 柔和的米色 */
+				color: #333;
+				border: none;
+				border-radius: 50px;
+				/* 圆角边框 */
+				font-size: 1rem;
+				font-weight: bold;
+				text-transform: uppercase;
+				/* 转换为大写 */
+				letter-spacing: 1px;
+				/* 字母间距 */
+				transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+				cursor: pointer;
+			}
+
+			.cta-button:hover {
+				background-color: #bdc3c7;
+				color: white;
+				transform: scale(1.05);
+				/* 放大效果 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="background-image"></div>
+		<div class="container">
+			<h1 class="header">欢迎来到QA毛俊的网站</h1>
+			<p class="description">探索更多，了解更多。</p>
+			<a href="https://maojun.xyz/blog/about/" class="cta-button">开始探索</a>
+		</div>
+	</body>
+</html>
